@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# macOS Configuration Script V9 (Post-Brewfile)
+# macOS Configuration Script V10 (Post-Brewfile)
 #
 # This script configures macOS for a developer after a Brewfile has been run.
 # It sets up Git, SSH, system settings, keyboard shortcuts, and the Dock.
@@ -26,6 +26,11 @@ print_header "Configuring Git"
 
 # Set the default branch name for new repositories to 'main'
 git config --global init.defaultBranch main
+
+# Configure Git to use SSH for signing and set the signing key
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgsign true
 
 if [ -z "$(git config --global user.name)" ]; then
     echo "Git user name not set. Let's configure it."
