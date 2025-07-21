@@ -13,6 +13,7 @@ brew "gh"
 brew "dockutil"
 brew "duti"
 brew "wget"
+brew "yarn"
 
 # apps
 
@@ -42,10 +43,12 @@ cask "paragon-ntfs"
 cask "spotify"
 cask "notion"
 cask "notion-calendar"
-cask "notion-mail"
+# cask "notion-mail" - Removed due to only being useable with gmail accounts
 cask "affinity-designer"
 cask "affinity-photo"
 cask "affinity-publisher"
+cask "hoppscotch"
+cask "postico"
 
 
 # fonts

@@ -157,3 +157,4 @@ echo "💡 Your Brewfile installed great developer fonts. Don't forget to set 'J
 # Things to add
 # - Remove Hints app or disable notifications
 # - Remove Apps: GarageBand
+# - Set up symlinks for Development folders and to Clients and Sandbox within it
